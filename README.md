@@ -1,2 +1,2 @@
 # minesweeper
-A Minesweeper Game developed by JS HTML CSS
+A Minesweeper Game developed by JS / HTML / CSS
