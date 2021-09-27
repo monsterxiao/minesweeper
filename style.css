@@ -1,0 +1,160 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(images/bg.svg) repeat;
+    background-size: cover;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    background-color: rgb(75, 74, 74);
+    padding: 15px;
+    width: max-content;
+    height: max-content;
+    border-radius:5px;
+    box-shadow: 10px 10px 20px #222831;
+}
+
+#mode-selector {
+    display: flex;
+    margin: 0px -3px 15px -3px;
+}
+
+.mode {
+    flex-grow: 1;
+    margin: 0 5px 0 5px;
+    padding: 5px 0px;
+    text-align: center;
+    border: 3px outset rgb(138, 138, 138);
+    font-size: small;
+    font-weight: bold;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.active {
+    background:rgb(234, 75, 75) !important;
+    border: 3px inset rgb(255, 100, 100) !important;
+    color: whitesmoke;
+}
+
+#status-board {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 15px 0px;
+    padding: 4px;
+    border: 3px inset rgb(138, 138, 138);
+}
+
+#mine-qty {
+    width: 70px;
+    height: 28px;
+    padding-top: 4px;
+    border: 3px inset rgb(138, 138, 138);
+    background: rgb(39, 39, 39);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(234, 75, 75);
+}
+
+#restart{
+    width: 32px;
+    height: 32px;
+    border: 3px outset rgb(138, 138, 138);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#restart:active {
+    border: 3px inset rgb(138, 138, 138);
+}
+
+#restart img {
+    max-width: 100%;
+}
+
+#timer {
+    width: 70px;
+    height: 28px;
+    padding-top: 4px;
+    background: rgb(39, 39, 39);
+    border: 3px inset rgb(138, 138, 138);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(234, 75, 75);
+}
+
+#mine {
+    border: 3px inset rgb(138, 138, 138);
+}
+
+.cell {
+    float: left;
+    width: 25px;
+    height: 25px;
+    background: rgb(95, 95, 95);
+    border: 3px outset rgb(138, 138, 138);
+    font-size: 0px;
+}
+
+.cell:hover {
+    cursor: pointer;
+    background-color: rgb(75, 74, 74);
+}
+
+/* 插旗 */
+.marked {
+    background: url(images/flag.png) repeat;
+    background-size: cover;
+}
+
+/* 展开格子 */
+.cell-reveal {
+    background: rgb(75, 74, 74);
+    width: 29px;
+    height: 29px;
+    border: 1px solid rgb(41, 41, 41) !important;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: 'Arial Rounded MT Bold';
+    color: lightgray;
+}
+
+/* 隐藏数字 0 */
+.is-zero {
+    font-size: 0px;
+}
+
+/* 游戏结束后，没标记的雷，显示红雷图 */
+.unmarked-mine {
+    background: url(images/mine.png) repeat;
+    background-size: cover;
+    font-size: 0px;
+}
+
+/* 游戏结束后，标记过的雷，显示x雷图*/
+.marked-mine {
+    background: url(images/markedmine.png) repeat;
+    background-size: cover;
+    font-size: 0px;
+}
+
+.row-clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+/* sweatalert 弹窗覆盖背景 */
+.swal-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
