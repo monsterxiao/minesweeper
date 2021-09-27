@@ -141,13 +141,14 @@ h2 {
     font-size: 0px;
 }
 
-/* 游戏结束后，标记过的雷，显示x雷图*/
+/* 游戏结束后，标记过的雷，显示x雷图 */
 .marked-mine {
     background: url(images/markedmine.png) repeat;
     background-size: cover;
     font-size: 0px;
 }
 
+/* 清除元素坍塌 */
 .row-clearfix::after {
     content: ' ';
     display: block;
