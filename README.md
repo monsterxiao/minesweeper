@@ -1,5 +1,5 @@
 # Minesweeper
-A Minesweeper Game developed by JS / HTML / CSS
+A Minesweeper Game developed by JavaScript / HTML / CSS
 
-## Play online：
+**Play online：**
 https://monsterxiao.github.io/minesweeper/
