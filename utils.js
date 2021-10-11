@@ -103,11 +103,6 @@ const closest = function(element, selector) {
     element 是一个 DOM 元素
     selector 是一个 string, 表示一个选择器
     可能的值是  'div'  '#id-div-gua'  '.red' 这三种
-
-    循环查找 element 的直系父元素
-    如果父元素符合选择器, 则返回这个父元素
-    body 的 parentElement 是 html，html 的 parentElement 是 null
-    如果找到最上面的元素都还没有找到（也就是找到 html 的 parentElement）, 则返回 null
     */
     let c = selector[0]
     if (c === '#') {

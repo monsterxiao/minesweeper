@@ -8,22 +8,27 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
-        <h2>Mine Sweeper v1.0 by MX</h2>
-        <div class="container">
-            <div id="mode-selector" data-m="easy">
-                <div class="mode active">容易</div>
-                <div class="mode">普通</div>
-                <div class="mode">困难</div>
-            </div>
-            <div id="status-board">
-                <div id="mine-qty">雷：0</div>
-                <div id="restart" data-lose="fales">
-                    <img src="images/happyface.png" alt="">
+        <main class="content">
+            <h2>Mine Sweeper v1.0 by MX</h2>
+            <div class="container">
+                <div id="mode-selector" data-m="easy">
+                    <div class="mode active">容易</div>
+                    <div class="mode">普通</div>
+                    <div class="mode">困难</div>
                 </div>
-                <div id="timer">0 秒</div>
+                <div id="status-board">
+                    <div id="mine-qty">雷：0</div>
+                    <div id="restart" data-lose="fales">
+                        <img src="images/happyface.png" alt="">
+                    </div>
+                    <div id="timer">0 秒</div>
+                </div>
+                <div id="mine"></div>
             </div>
-            <div id="mine"></div>
-        </div>
+        </main>
+        <footer>Copyright © 2021 Monsterxiao 🤚🏻 
+            <a href="https://github.com/monsterxiao">Visit My Github</a> or <a href="https://gitee.com/monsterxiao">Gitee</a>
+        </footer>
         <script src="utils.js"></script>
         <script src="main.js"></script>
     </body>

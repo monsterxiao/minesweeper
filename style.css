@@ -1,15 +1,21 @@
 body {
     display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
-    background: url(images/bg.svg) repeat;
-    background-size: cover;
+    background: url(images/bg.svg) no-repeat;
+    background-size: cover; 
+}
+
+main {
+    flex: 1;
 }
 
 h2 {
     margin-bottom: 15px;
     color: white;
     font-family: Helvetica, sans-serif;
+    text-align: center;
 }
 
 .container {
@@ -158,4 +164,21 @@ h2 {
 /* sweatalert 弹窗覆盖背景 */
 .swal-overlay {
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    margin: 10px 0 10px 0;
+    padding: 5px 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    size: 10px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+footer a {
+    text-decoration: none;
+    color: blueviolet;
 }
